@@ -21,3 +21,24 @@ body {
   .title {
     font-size: 3rem;
   }
+
+  .status {
+    font-size: 1.5rem;
+    border: 1px solid black;
+  }
+
+  .status.online {
+    color: lightgreen; 
+  }
+
+  .status.online::before {
+    content: 'Online'
+  }
+
+  .status.offline {
+    color: red; 
+  }
+
+  .status.offline::before {
+    content: 'Offline'; 
+  }
